@@ -14,6 +14,7 @@ dir /usr/lib64                                                 0755 0 0
 slink /bin/sh                    /bin/bash                     0744 0 0
 file /bin/bash                   /bin/bash                     0755 0 0
 file /usr/bin/ls                 /usr/bin/ls                   0755 0 0
+file /usr/bin/setsid             /usr/bin/setsid               0755 0 0
 file /usr/lib64/libreadline.so.8 /usr/lib64/libreadline.so.8.1 0755 0 0
 file /usr/lib64/libtinfo.so.6    /usr/lib64/libtinfo.so.6.4    0755 0 0
 file /usr/lib64/libtinfow.so.6   /usr/lib64/libtinfow.so.6.4   0755 0 0

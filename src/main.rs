@@ -60,9 +60,8 @@ fn shutdown() {
 
 fn rescue_shell() -> !{
     println!("Rescue shell");
-    let error = Command::new("/bin/bash")
-        .stdin(process::Stdio::inherit())
-        .args(["-i", "-s"])
+    let error = Command::new("/usr/bin/setsid")
+        .args(["-c", "/bin/bash"])
         .exec();
 
     // If bash executes, we should never reach this point
