@@ -1,0 +1,5 @@
+/target
+/unpacked
+
+/gen_init_cpio
+/initrd.cpio

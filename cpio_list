@@ -1,0 +1,21 @@
+dir /dev 755 0 0
+nod /dev/console 644 0 0 c 5 1
+
+file /init target/x86_64-unknown-linux-musl/release/init       0755 0 0
+
+dir /bin                                                       0755 0 0
+dir /dev                                                       0755 0 0
+dir /lib64                                                     0755 0 0
+dir /proc                                                      0755 0 0
+dir /sys                                                       0755 0 0
+dir /usr                                                       0755 0 0
+dir /usr/bin                                                   0755 0 0
+dir /usr/lib64                                                 0755 0 0
+slink /bin/sh                    /bin/bash                     0744 0 0
+file /bin/bash                   /bin/bash                     0755 0 0
+file /usr/bin/ls                 /usr/bin/ls                   0755 0 0
+file /usr/lib64/libreadline.so.8 /usr/lib64/libreadline.so.8.1 0755 0 0
+file /usr/lib64/libtinfo.so.6    /usr/lib64/libtinfo.so.6.4    0755 0 0
+file /usr/lib64/libtinfow.so.6   /usr/lib64/libtinfow.so.6.4   0755 0 0
+file /usr/lib64/libc.so.6        /usr/lib64/libc.so.6          0755 0 0
+file /lib64/ld-linux-x86-64.so.2 /lib64/ld-linux-x86-64.so.2   0755 0 0
