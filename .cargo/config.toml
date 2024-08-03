@@ -1,2 +1,7 @@
 [build]
+
+# On a gentoo system, you will need a musl toolchain.
+# You can install it with crossdev:
+#  $ crossdev -t x86_64-unknown-linux-musl
+#  $ ln -s x86_64-unknown-linux-musl-gcc /usr/bin/musl-gcc
 target = "x86_64-unknown-linux-musl"
